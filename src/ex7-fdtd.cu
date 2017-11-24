@@ -40,7 +40,7 @@ int main()
 		}
 	}
 
-	auto ofs = std::ofstream("output.txt");
+	std::ofstream ofs("output.txt");
 	for (int i = 0; i < nt; i++) {
 		for (int j = 0; j < nx; j++)
 			ofs << u[i*nx + j] << "\t";
